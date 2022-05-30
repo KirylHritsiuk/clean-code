@@ -129,7 +129,7 @@ button:hover {
   transform: rotateZ(0);
 }
 /* Completed */
-#completedTasks label {
+#completedTasks {
   text-decoration: line-through;
   color: #888;
 }
@@ -141,6 +141,6 @@ button:hover {
   display: inline-block;
   width: 224px;
 }
-.editMode label {
+.editMode #taskToDo {
   display: none;
 }

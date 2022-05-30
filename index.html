@@ -21,10 +21,11 @@
   <main class="main">
     <article class="main-content container">
       <section class="add-box">
-        <label class="add-title-inner 
-                      box-title" 
-               for="newTaskInput">
-               Add Item</label>
+        <label for="newTaskInput"
+               class="add-title-inner 
+                      box-title">
+               Add Item
+        </label>
         <div class="item-row">
           <input id="newTaskInput"
                  class="task 
@@ -38,7 +39,8 @@
         <ul id="incompletedTasks">
           <li>
             <input class="checkbox" type="checkbox">
-            <label class="task 
+            <label id="taskToDo" 
+                   class="task 
                           task_row">
                    Pay Bills
             </label>
@@ -54,16 +56,16 @@
           </li>
           <li class="editMode">
             <input class="checkbox" type="checkbox">
-            <label class="task 
+            <label id="taskToDo" class="task 
                           task_row">
                    Go Shopping
             </label>
-            <input class="task 
+            <input id="text" 
+                   type="text"
+                   value="Go Shopping"
+                   class="task 
                           task_text 
-                          task_medium"
-                   id="text" 
-                   type="text" 
-                   value="Go Shopping">
+                          task_medium">
             <button class="edit">Save</button>
             <button class="delete">
               <img class="delete__img" src="./remove.svg" alt="Delete">
@@ -76,7 +78,8 @@
         <ul id="completedTasks">
           <li>
             <input class="checkbox" type="checkbox" checked>
-            <label class="task 
+            <label id="taskToDo" 
+                   class="task 
                           task_row">
                    See the Doctor
             </label>
