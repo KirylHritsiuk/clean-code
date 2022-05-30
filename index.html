@@ -21,10 +21,15 @@
   <main class="main">
     <article class="main-content container">
       <section class="add-box">
-        <label class="add-title-inner box-title" for="newTaskInput">Add Item</label>
+        <label class="add-title-inner 
+                      box-title" 
+               for="newTaskInput">
+               Add Item</label>
         <div class="item-row">
-          <input class="task task_text task_wide" 
-                 id="newTaskInput">
+          <input id="newTaskInput"
+                 class="task 
+                        task_text 
+                        task_wide">
           <button id="buttonToAdd">Add</button>
         </div>
       </section>
@@ -33,10 +38,15 @@
         <ul id="incompletedTasks">
           <li>
             <input class="checkbox" type="checkbox">
-            <label class="task task_row">Pay Bills</label>
-            <input class="task task_text task_medium" 
-                   id="text" 
-                   type="text">
+            <label class="task 
+                          task_row">
+                   Pay Bills
+            </label>
+            <input id="text"
+                   type="text"
+                   class="task 
+                          task_text 
+                          task_medium">
             <button class="edit">Edit</button>
             <button class="delete">
               <img class="delete__img" src="./remove.svg" alt="Delete">
@@ -44,8 +54,13 @@
           </li>
           <li class="editMode">
             <input class="checkbox" type="checkbox">
-            <label class="task task_row">Go Shopping</label>
-            <input class="task task_text task_medium"
+            <label class="task 
+                          task_row">
+                   Go Shopping
+            </label>
+            <input class="task 
+                          task_text 
+                          task_medium"
                    id="text" 
                    type="text" 
                    value="Go Shopping">
@@ -61,13 +76,18 @@
         <ul id="completedTasks">
           <li>
             <input class="checkbox" type="checkbox" checked>
-            <label class="task task_row">See the Doctor</label>
-            <input class="task task_text task_medium" 
+            <label class="task 
+                          task_row">
+                   See the Doctor
+            </label>
+            <input class="task 
+                          task_text 
+                          task_medium" 
                    id="text" 
                    type="text">
             <button class="edit">Edit</button>
             <button class="delete">
-              <img class="delete__img"  src="./remove.svg" alt="Delete">
+              <img class="delete__img" src="./remove.svg" alt="Delete">
             </button>
           </li>
         </ul>
