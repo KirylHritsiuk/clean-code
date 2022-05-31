@@ -7,10 +7,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var newTaskInput=document.getElementById("newTaskInput");//Add a new task.
-var addButton=document.getElementById("buttonToAdd");//Button "Add"
-var incompleteTaskHolder=document.getElementById("incompletedTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completedTasks");//completed-tasks
+var newTaskInput=document.getElementById("new-task-input");//Add a new task.
+var addButton=document.getElementById("button-to-add");//Button "Add"
+var incompleteTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 //New task list item
 var createNewTaskElement=function(taskString){
@@ -31,14 +31,14 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.id = "taskToDo";
-    label.className='task task_row';
+    label.id = "task-to-do";
+    label.className='task task-edit task_row';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.className="checkbox";
     editInput.type="text";
-    editInput.className="task task_text task_medium";
+    editInput.className="task task_text task_text_disable task_medium";
     editInput.id="text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
@@ -80,10 +80,10 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector("#text");
-    var label=listItem.querySelector("#taskToDo");
+    var editInput=listItem.querySelector(".task_text_disable");
+    var label=listItem.querySelector("#task-to-do");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -97,7 +97,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("edit-mode");
 };
 
 //Delete task.

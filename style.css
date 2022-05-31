@@ -129,18 +129,18 @@ button:hover {
   transform: rotateZ(0);
 }
 /* Completed */
-#completedTasks {
+.completed-tasks {
   text-decoration: line-through;
   color: #888;
 }
 /* Edit Task */
-#text {
+.task_text_disable {
   display: none;
 }
-.editMode #text {
+.edit-mode .task_text_disable  {
   display: inline-block;
   width: 224px;
 }
-.editMode #taskToDo {
+.edit-mode .task-edit {
   display: none;
 }
